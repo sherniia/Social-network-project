@@ -16,3 +16,7 @@
     font-family: 'Lato', sans-serif;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}

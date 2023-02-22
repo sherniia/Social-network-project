@@ -9,6 +9,7 @@
     --text-color: #333;
   }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,82 @@
     font-family: 'Lato', sans-serif;
 }
 
+
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 2fr 7fr 1fr;
+}
+
+
+.card {
+  position: relative;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 3px 6px rgba(0,0,0,.2);
+}
+
+.statusField {
+  width: 100%;
+  border: solid 1px;
+  padding: 3px;
+  margin-bottom: 16px;
+}
+
+.blueButton {
+  background-color: #199de5;
+  color: white;
+  border: none;
+  padding: 6px;
+  width: 120px;
+}
+
+.blueButton:hover {
+  background-color: #bdbdbd;
+  color: rgb(0, 0, 0);
+}
+
+.circlePhoto {
+  display: inline-block;
+  border-radius: 50%;
+  width: 64px;
+}
+
+.nameTag {
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 86px;
+  line-height: 1.5em;
+  margin: 16px;
+  font-size: 16pt;
+}
+
+.timeStamp {
+  position: absolute;
+  right: 20px;
+  text-align: right;
+}
+
+.lightRule > hr {
+  opacity: 10%;
+}
+
+.postImageDouble {
+  display: inline-block;
+  max-width: 49%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.postImageSingle {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.buttonBar {
+  margin-top: .5em;
 }

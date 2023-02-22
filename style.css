@@ -2,8 +2,8 @@
 
 
 :root {
-    --background-dark:  #E59462;
-    --background-light: #D5CAE4;
+    --background-dark:  #076490;
+    --background-light: #199de5;
     --light-color: #E1E5EB;
     --shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     --text-color: #333;
@@ -17,13 +17,63 @@
     font-family: 'Lato', sans-serif;
 }
 
+/*  General styles */
 
+body .container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
 
 .grid {
   display: grid;
   grid-template-columns: 2fr 7fr 1fr;
 }
 
+/* Navbar */
+
+nav .grid {
+  grid-template-columns: 1fr 8fr;
+}
+
+nav .home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #076490;
+  color: white;
+}
+
+nav .home:hover{
+  background-color: #bdbdbd;
+  color: rgb(0, 0, 0);
+}
+
+.home p {
+  margin: 0;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+nav .menu-bar {
+  display: flex;
+  align-items: center;
+  background-color: #199de5;
+  color: white;
+}
+
+nav .menu-bar .icons{
+  padding: 15px 20px;
+}
+
+.menu-bar .icons:hover {
+  background-color: white;
+  color: black;
+}
+/* Post Section */
 
 .card {
   position: relative;
@@ -95,4 +145,19 @@
 
 .buttonBar {
   margin-top: .5em;
+}
+
+
+/* Footers */
+
+.footer1 {
+  background-color: var(--background-light);
+  color: white;
+  padding:15px 10px;
+}
+
+.footer2 {
+  background-color:var(--background-dark);
+  color: white;
+  padding: 7px;
 }

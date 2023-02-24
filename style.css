@@ -73,6 +73,108 @@ nav .menu-bar .icons{
   background-color: white;
   color: black;
 }
+/*Personal section*/
+.personal{
+  width: 400px;
+}
+/* Info and profile */
+/* box */
+.box {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* My profile */
+.profile h1 {
+  text-align: center;
+  font-size: 130;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* image */
+.profile .img_container {
+  width: 80%;
+  margin: auto;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+hr {
+  color: var(--light-color);
+}
+
+/* icon same line with text */
+.profile_rows div {
+  display: flex;
+  align-items: center;
+}
+
+/* icon */
+.profile_rows div i
+{
+  margin: 20px;
+  color: gray;
+}
+
+/*********
+ SECOND CARD 
+ *********/
+.networks {
+  padding: 0 0 20px;
+}
+
+.networks .groups_events {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-light);
+  color: var(--white);
+  cursor: pointer;
+}
+.networks .groups_events p, .networks .groups_events i {
+  color:white;
+  margin: 20px;
+}
+.networks .groups_events:hover {
+  color: black;
+  background-color: #bdbdbd;
+}
+.networks .groups_events:hover * {
+  color: var(--black);
+}
+
+/* only first row */
+.first_row_groups_events {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* some text some other text */
+.networks p {
+  margin: 20px;
+}
+
+.networks_rows {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-gap: 1em;
+  width: 90%;
+  margin: 1em  1em;
+
+}
+
+.networks_rows img {
+  width: 100%;
+  height: 100%;
+  
+  
+}
 /* Post Section */
 
 .card {

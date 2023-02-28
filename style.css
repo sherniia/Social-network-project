@@ -26,7 +26,7 @@ body .container {
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 7fr 1fr;
+  grid-template-columns: 2fr 7fr 2fr;
 }
 
 /* Navbar */
@@ -72,9 +72,11 @@ nav .menu-bar .icons {
   color: black;
 }
 /*Personal section*/
-.personal {
+aias-news-section
+/* .personal{
   width: 400px;
-}
+} */
+
 /* Info and profile */
 /* box */
 .box {
@@ -160,10 +162,12 @@ hr {
 
 .networks_rows {
   display: grid;
-  grid-template-columns: 47% 47%;
+  /* grid-template-columns: 47% 47%; */
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
-  width: 90%;
-  margin: 1em 1em;
+  /* width: 90%; */
+  margin: 1em  1em;
+
 }
 
 .networks_rows img {
@@ -360,6 +364,71 @@ hr {
 
 .buttonBar {
   margin-top: 0.5em;
+}
+
+/* News */
+/* .news {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+} */
+
+.news .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.news .bug i{
+  margin: auto;
+}
+
+.news .events img {
+  display: inline-block;
+  width: 90%;
+}
+
+.news .events span {
+  font-weight: bolder;
+}
+
+.news .events .button {
+  padding: 7px;
+  background-color: rgb(217, 240, 252);
+  width: 100%;
+}
+
+.news .events .button:hover {
+  background-color: rgb(224, 221, 221);
+}
+
+.news .request img {
+  display: inline-block;
+  width: 80%;
+}
+
+.news .request .yes-no {
+  display: flex;
+  
+}
+
+.news .request .yes-no div:hover {
+  background-color: #bdbdbd;
+  color: rgb(0, 0, 0);
+}
+
+.news .request i {
+  color: white;
+}
+
+.news .yes {
+  background-color: rgb(17, 212, 3);
+  padding: 0px 10px
+}
+.news .no {
+  background-color: rgb(232, 110, 110);
+  padding: 0px 10px
 }
 
 /* Footers */

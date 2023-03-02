@@ -26,7 +26,7 @@ body .container {
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 7fr 2fr;
+  grid-template-columns: 3fr 7fr 2fr;
 }
 
 /* Navbar */
@@ -83,7 +83,7 @@ aias-news-section
   background-color: var(--white);
   box-shadow: var(--shadow);
   margin: 15px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
 }
 
@@ -97,7 +97,7 @@ aias-news-section
 
 /* image */
 .profile .img_container {
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 
@@ -280,16 +280,25 @@ hr {
   margin: 15px;
   position: relative;
 }
-.exit {
+.heybar .exit {
   border: none;
   display: inline-block;
-  padding: 8px 16px;
   vertical-align: middle;
-  overflow: hidden;
-  background-color: rgb(217, 211, 211);
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
+}
+
+.heybar .exit i {
+  position:absolute;
+  top: 0;
+  right:0;
+  padding: 15px;
+  background-color: rgb(215, 241, 247);
+}
+
+.heybar .exit i:hover {
+  background-color: rgb(208, 208, 208);
 }
 
 /* Post Section */
@@ -326,6 +335,8 @@ hr {
   display: inline-block;
   border-radius: 50%;
   width: 64px;
+  height: 64px;
+  object-fit: cover;
 }
 
 .nameTag {
@@ -367,11 +378,7 @@ hr {
 }
 
 /* News */
-/* .news {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-} */
+
 
 .news {
   background-color: white;
